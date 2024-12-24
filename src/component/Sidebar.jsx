@@ -1,4 +1,7 @@
 import React from "react";
+import { FaPen } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
+
 const groups = [
   { title: "Leisure", img: "/img/group/leisure.jpg", followed: false },
   { title: "Activism", img: "/img/group/activism.jpg", followed: false },
@@ -22,7 +25,9 @@ const GroupItem = ({ group }) => {
   );
 };
 
-const Sidebar = ({ isUserLoggedIn }) => {
+const Sidebar = () => {
+  const isUserLoggedIn = localStorage.getItem("user");
+
   return (
     <div className="space-y-8 w-96">
       <form className="relative">
@@ -33,9 +38,15 @@ const Sidebar = ({ isUserLoggedIn }) => {
         />
         <input
           className="px-4 py-2 pl-6 border-b-2 border-black/60 w-full outline-none"
-          type="text"
-          placeholder="Enter your location..."
+          type={isUserLoggedIn ? "text" : null}
+          placeholder={
+            isUserLoggedIn ? "Enter your location..." : "Noida, India"
+          }
+          readOnly={!isUserLoggedIn}
         />
+        <div className="top-1/2 right-0 absolute transform -translate-y-1/2">
+          {isUserLoggedIn ? <IoMdClose size={24} /> : <FaPen />}
+        </div>
       </form>
       <div>
         <p>

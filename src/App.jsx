@@ -6,8 +6,6 @@ import Sidebar from "./component/Sidebar";
 import { useState } from "react";
 
 function App() {
-  const [isUserLoggedIn, setIsUserLoggedIn] = useState(false);
-
   return (
     <main className="">
       <Navbar />
@@ -15,7 +13,7 @@ function App() {
         <Category />
         <div className="flex justify-between items-start gap-8 my-4">
           <Posts />
-          <Sidebar isUserLoggedIn={isUserLoggedIn} />
+          <Sidebar />
         </div>
       </div>
     </main>

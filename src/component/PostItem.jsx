@@ -84,12 +84,12 @@ const PostItem = ({ post }) => {
               <img
                 width={60}
                 height={60}
-                src={post.author.img}
+                src={post.authorImg}
                 alt="author"
                 className="w-full h-full object-center object-cover"
               />
             </div>
-            <p className="font-bold">{post.author.name}</p>
+            <p className="font-bold">{post.authorName}</p>
           </div>
           <div className="flex gap-6">
             <div className="flex items-center gap-2">

@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import React from "react";
 import PostItem from "./PostItem";
 
@@ -13,10 +12,8 @@ const posts = [
     image: "/img/daniel-plan-1123199-unsplash.jpg",
 
     logo: "✍️",
-    author: {
-      name: "Sarthak Kamra",
-      img: "/img/sarthak.jpg",
-    },
+    authorName: "Sarthak Kamra",
+    authorImg: "/img/sarthak.jpg",
   },
   {
     title:
@@ -29,10 +26,8 @@ const posts = [
     image: "/img/da-kraplak-1635130-unsplash.jpg",
 
     logo: "🔬️",
-    author: {
-      name: "Sarah West",
-      img: "/img/sarah.jpg",
-    },
+    authorName: "Sarah West",
+    authorImg: "/img/sarah.jpg",
   },
   {
     title: "Finance & Investment Elite Social Mixer @Lujiazui",
@@ -44,10 +39,8 @@ const posts = [
     image: "/img/david-clarke-1633258-unsplash.jpg",
 
     logo: "🗓️",
-    author: {
-      name: "Ronal Jones",
-      img: "/img/ronal.jpg",
-    },
+    authorName: "Ronal Jones",
+    authorImg: "/img/ronal.jpg",
   },
   {
     title: "Software Developer",
@@ -59,10 +52,8 @@ const posts = [
     siteUrl: "#",
 
     logo: "💼️",
-    author: {
-      name: "Joseph Gray",
-      img: "/img/joseph.jpg",
-    },
+    authorName: "Joseph Gray",
+    authorImg: "/img/joseph.jpg",
   },
 ];
 
